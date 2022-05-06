@@ -3,8 +3,11 @@ const oddEven = prompt("Scegli tra pari e dispari")
 console.log(oddEven);
 const playerNumber = Number(prompt("Scegli un numero tra 1 e 5"));
 console.log(playerNumber);
-// Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
-const cpuNumber = Math.floor(Math.random() * 5) + 1;
+// Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione)
+function getRandomNumber (min , max) {
+    return Math.floor(Math.random() * (max - min +1)) + min;
+}
+const cpuNumber = getRandomNumber(1,5);
 console.log(cpuNumber);
 // Sommiamo i due numeri
 const sum = cpuNumber + playerNumber;
