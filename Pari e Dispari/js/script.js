@@ -10,15 +10,15 @@ console.log(cpuNumber);
 const sum = cpuNumber + playerNumber;
 console.log(sum);
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
-let sumEven = "pari";
-let sumOdd = "dispari";
+let sumEven = 0;
+let sumOdd = 0;
 if ( sum % 2 === 0 ) {
-    sumEven = alert("la somma è pari");
+    sumEven = "pari";
 } else {
-    sumOdd = alert("la somma è dispari");
+    sumOdd = "dispari";
 }
 // Dichiariamo chi ha vinto
-if (oddEven === sumEven) {
+if (oddEven === sumEven || oddEven === sumOdd) {
     alert("hai vinto");
 } else {
     alert("ritenta");
