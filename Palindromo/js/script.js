@@ -5,3 +5,6 @@ console.log(wordRequest);
 const letterArray = [];
 letterArray.push(wordRequest);
 console.log(letterArray);
+for (let i = 0 ; i < letterArray.length ; i++) {
+    alert(letterArray.length);
+}
